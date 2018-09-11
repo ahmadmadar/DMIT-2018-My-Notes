@@ -25,5 +25,9 @@ namespace ChinookBackend.Entities
         public string Fax { get; set; }
         public string Email { get; set; }
         public int SupportRepId { get; set; }
+
+        // Navigation
+
+
     }
 }

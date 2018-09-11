@@ -27,5 +27,12 @@ namespace ChinookBackend.Entities
         public string Phone { get; set; }
         public string Fax { get; set; }
         public string Email { get; set; }
+
+        // Navigation
+
+        [ForeignKey("ReportsTo")]
+        public virtual Employee Manager { get; set; }
+        public ICollection<Employee> Subbordinates { get; set; }
+            = new HashSet<Employee>();
     }
 }
