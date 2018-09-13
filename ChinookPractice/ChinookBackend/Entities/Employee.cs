@@ -30,7 +30,7 @@ namespace ChinookBackend.Entities
 
         // Navigation
 
-        [ForeignKey("ReportsTo")]
+        [ForeignKey(nameof(ReportsTo))]
         public virtual Employee Manager { get; set; }
         public ICollection<Employee> Subbordinates { get; set; }
             = new HashSet<Employee>();
