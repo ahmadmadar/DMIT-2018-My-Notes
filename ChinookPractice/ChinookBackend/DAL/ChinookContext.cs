@@ -10,7 +10,7 @@ namespace ChinookBackend.DAL
 {
     internal class ChinookContext : DbContext
     {
-        public ChinookContext() : base("")
+        public ChinookContext() : base("Chinook")
         {
             Database.SetInitializer<ChinookContext>(null);
         }
